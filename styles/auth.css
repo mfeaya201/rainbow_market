@@ -1,0 +1,109 @@
+:root {
+  --bg-page: #8ca87c;
+  --bg-container: #f7fdf7;
+  --primary: #457d58;
+  --primary-light: #5f9e71;
+  --tab-bg: #eaf3eb;
+  --text-dark: #1a4d2e;
+  --text-light: #ffffff;
+  --border: #ccc;
+}
+
+.auth-page {
+  background-color: var(--bg-page);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background-color: var(--bg-container);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft box shadow */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.auth-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.auth-tabs button {
+  background-color: var(--tab-bg);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: var(--text-dark);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-tabs button.active {
+  background-color: var(--primary-light);
+  color: var(--text-light);
+}
+
+/* Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input,
+.auth-form select {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-form select {
+  background-color: var(--text-light);
+  color: #333;
+}
+
+/* Submit Button */
+.auth-form button {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: var(--primary-light);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Back to Rainbow Market link */
+.back-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.back-link a {
+  color: var(--text-dark);
+  text-decoration: none;
+}

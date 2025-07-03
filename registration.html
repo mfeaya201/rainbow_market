@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainbow Market - Sign Up</title>
+    <link rel="stylesheet" href="/rainbow_market/styles/auth.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="auth-page">
+    <div class="auth-container">
+      <h1 class="auth-title">Welcome To Rainbow Market</h1>
+
+      <div class="auth-tabs">
+        <button id="show-signup" class="active">Sign Up</button>
+        <button id="show-login">Login</button>
+      </div>
+
+      <form
+        id="signup-form"
+        class="auth-form"
+        action="/rainbow_market/signup.php"
+        method="POST"
+      >
+        <input type="hidden" name="action" value="signup" />
+
+        <input
+          type="text"
+          name="name"
+          id="signup-name"
+          placeholder="Full Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="signup-email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="signup-password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="confirm-password"
+          id="signup-confirm-password"
+          placeholder="Confirm Password"
+          required
+        />
+        <select name="role" id="signup-role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="buyer">Buyer</option>
+          <option value="seller">Seller</option>
+        </select>
+        <button type="submit">Create Account</button>
+      </form>
+
+      <form
+        id="login-form"
+        class="auth-form hidden"
+        action="/rainbow_market/signup.php"
+        method="POST"
+      >
+        <input type="hidden" name="action" value="login" />
+
+        <input
+          type="email"
+          name="email"
+          id="login-email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        />
+        <select name="role" id="login-role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="buyer">Buyer</option>
+          <option value="seller">Seller</option>
+        </select>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+
+    <script src="/rainbow_market/scripts/auth.js"></script>
+  </body>
+</html>

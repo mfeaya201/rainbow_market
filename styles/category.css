@@ -1,0 +1,67 @@
+.category-header {
+  background-color: #457d58;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.category-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.category-main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #1a4d2e;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background-color: #5f9e71;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Unified card styling for category and product listings */
+.category-card,
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-card:hover,
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Unified image styling */
+.category-card img,
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
